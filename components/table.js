@@ -24,12 +24,12 @@ class Table extends Component {
     if (this.props.borderStyle && this.props.borderStyle.borderWidth) {
       borderWidth = this.props.borderStyle.borderWidth;
     } else {
-      borderWidth = 1;
+      borderWidth = 0;
     }
     if (this.props.borderStyle && this.props.borderStyle.borderColor) {
       borderColor = this.props.borderStyle.borderColor;
     } else {
-      borderColor = '#000';
+      borderColor = 'transparent';
     }
 
     return (
