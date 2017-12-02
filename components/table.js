@@ -41,7 +41,7 @@ class Table extends Component {
           borderColor: borderColor
         }
       ]}>
-        {this._renderChildren(this.props)}
+        {this.props.children}
       </View>
     )
   }
@@ -68,7 +68,7 @@ class TableWrapper extends Component {
     const { style } = this.props;
     return (
       <View style={style}>
-        {this._renderChildren(this.props)}
+        {this.props.children}
       </View>
     );
   }
